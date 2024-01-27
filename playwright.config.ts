@@ -34,7 +34,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: `npx serve -p ${port} -L storybook-static/`,
+    command: `npx serve -c ../.serverc.json -p ${port} -L storybook-static/`,
     url: baseUrl,
     reuseExistingServer: !process.env.CI,
   },
