@@ -38,4 +38,5 @@ export default defineConfig({
     url: baseUrl,
     reuseExistingServer: !process.env.CI,
   },
+  reporter: "html",
 });
